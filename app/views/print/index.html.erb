@@ -1,6 +1,6 @@
 <%= stylesheet_link_tag "print" %>
 
-<h1>Принтиране:</h1>
+<h1>What files would you like to print?</h1>
 <% @uploads = [] %>
 <% @printers = [] %>
 <% @copies = [] %>
@@ -10,9 +10,9 @@
 	</div>
 	<div>
 	    <%=
-	        link_to_function "Добави файл за принтиране" do |page|
+	        link_to_function "Add another file to print" do |page|
 	            page.insert_html :bottom, "files", :partial => "single_file_print"
 	        end
 	    %>
 	</div>
-<%= submit_tag "Принтирай" %>
+<%= submit_tag "Print my files" %>
