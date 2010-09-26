@@ -3,7 +3,7 @@
     <%= file_field "uploads[]", :file, :class => "file_input" %>
 
     <%= label_tag "Принтер:" %>
-    <%= select_tag "printers[]", "<option>HP-T610</option>", :class => "printer_select" %>
+    <%= select_tag "printers[]", printer_options, :class => "printer_select" %>
 
     <%= label_tag "Брой копия:" %>
     <%= text_field_tag "copies[]", "1", :size => 2, :class => "number_of_copies" %>
