@@ -31,7 +31,7 @@ class PrintController < ApplicationController
   end
 
   def each_job_is_sufficiently_specified?
-    @printers.size == @copies.size and @printers.size >= @uploads.size
+    @printers.size == @copies.size and @printers.size == @uploads.size
   end
   
   def print_all_files
