@@ -2,7 +2,7 @@ Webprint::Application.routes.draw do
   
   get 'print' => 'print#index'
   post 'print/print_files' => 'print#print_files'
-  root :to => 'welcome#index'
+  root :to => 'print#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
