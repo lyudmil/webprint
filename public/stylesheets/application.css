@@ -1,0 +1,26 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.notice {
+    background-color: green;
+    color: white;
+    padding: 5px;
+	float: right;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    padding: 5px;
+	float: right;
+}
+
+.weaker {
+	color:gray;
+}
+
+.content {
+	margin-left: 124px;
+	width: 900px;
+}

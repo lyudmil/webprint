@@ -1,0 +1,17 @@
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#print_job {
+	margin-left: 30px;
+	font-size: large;
+}
+
+#print_button {
+	margin-left: 20px;
+}
+
+#controls {
+	font-size: small;
+}
