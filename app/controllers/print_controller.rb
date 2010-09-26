@@ -9,7 +9,7 @@ class PrintController < ApplicationController
     @printers = params[:printers] || []
     @copies = params[:copies] || []
     
-    unless each_job_is_sufficiently_specified
+    unless each_job_is_sufficiently_specified?
       flash[:error] = "Please specify a printer and the number of copies for each file."
       render :index and return
     end
@@ -30,7 +30,7 @@ class PrintController < ApplicationController
     end
   end
 
-  def each_job_is_sufficiently_specified
+  def each_job_is_sufficiently_specified?
     @printers.size == @copies.size and @printers.size >= @uploads.size
   end
   
