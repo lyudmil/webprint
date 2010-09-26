@@ -8,6 +8,11 @@ div {
 	font-size: large;
 }
 
+.print_job_input {
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
 #print_button {
 	margin-left: 20px;
 }
