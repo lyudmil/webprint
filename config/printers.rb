@@ -1,0 +1,1 @@
+$INSTALLED_PRINTERS = ["HP-160", "Cannon IR"]
