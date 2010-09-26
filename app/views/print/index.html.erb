@@ -1,0 +1,19 @@
+<%= stylesheet_link_tag "print" %>
+
+<h1>Принтиране:</h1>
+<%= @uploads = [] %>
+<%= @printers = [] %>
+<%= @copies = [] %>
+<%= form_tag("/print/print_files", :multipart => true) %>
+
+<div id="files">
+    <%= render :partial => "single_file_print" %>
+</div>
+<div>
+    <%=
+        link_to_function "Добави файл за принтиране" do |page|
+            page.insert_html :bottom, "files", :partial => "single_file_print"
+        end
+    %>
+</div>
+<%= submit_tag "Принтирай" %>
